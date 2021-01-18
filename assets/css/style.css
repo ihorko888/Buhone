@@ -11426,6 +11426,30 @@ textarea.form-control-lg {
     background-color: #E5E5E5;
 }
 
+@media (max-width: 992px) {
+    .row-dnone {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .controls {
+        display: none;
+    }
+
+    .carousel-indicators {
+        justify-content: center !important;
+    }
+
+    .section__title {
+        font-size: 25px !important;
+    }
+
+    .services__block {
+        margin-bottom: 24px;
+    }
+}
+
 .main {
     height: calc(100vh - 107.2px);
     background-image: url("../img/main-bg.jpg");
@@ -11438,17 +11462,17 @@ textarea.form-control-lg {
     padding-top: 180px;
 }
 
-.main .main__content .carousel-inner {
+.carousel-inner {
     color: #fff;
 }
 
-.main .main__content .carousel-inner h1, .main .main__content .carousel-inner .h1 {
+.carousel-inner h1, .carousel-inner .h1 {
     margin-bottom: 80px;
     font-weight: 700;
     font-family: 'Merriweather', serif !important;
 }
 
-.main .main__content .carousel-inner .btn {
+.carousel-inner .btn {
     padding: 18px 50px;
     border-radius: 0;
     background-color: #005FA3;
@@ -11456,7 +11480,7 @@ textarea.form-control-lg {
     font-size: 18px;
 }
 
-.main .main__content .controls {
+.controls {
     position: absolute;
     bottom: -100px;
     width: 60px;
@@ -11465,29 +11489,29 @@ textarea.form-control-lg {
     outline: 3px solid #494949;
 }
 
-.main .main__content .controls:hover {
+.controls:hover {
     opacity: .8;
 }
 
-.main .main__content .controls a {
+.controls a {
     width: 100%;
     height: 100%;
 }
 
-.main .main__content .prev-bg {
+.prev-bg {
     right: 63px;
 }
 
-.main .main__content .next-bg {
+.next-bg {
     right: 0;
 }
 
-.main .main__content .carousel-indicators {
+.carousel-indicators {
     bottom: -100px;
     justify-content: flex-start;
 }
 
-.main .main__content .carousel-indicators li {
+.carousel-indicators li {
     margin-right: 40px;
     width: 13px;
     height: 13px;
@@ -11496,7 +11520,7 @@ textarea.form-control-lg {
     border-top: 0;
 }
 
-.main .carousel-control-next, .main .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     display: flex !important;
 }
 
@@ -11540,13 +11564,194 @@ textarea.form-control-lg {
 }
 
 .section__subtitle {
-    font-weight: 900;
+    font-weight: 900 !important;
     font-size: 20px;
     color: #BDBDBD;
 }
 
 .section__title {
+    font-family: 'Merriweather', serif !important;
     font-weight: 900;
     font-size: 40px;
     color: #333;
+}
+
+.about {
+    padding: 140px 0;
+}
+
+.about .about__left .section__title span {
+    color: #005FA3;
+}
+
+.about .about__left p {
+    max-width: 445px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.about .about__right .about__right-item {
+    padding: 30px 100px 40px 40px;
+    width: 255px;
+    height: 255px;
+    background-color: #EBEBEB;
+    transition: .1s;
+}
+
+.about .about__right .about__right-item span {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.about .about__right .about__right-item p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.about .about__right .about__right-item a {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline !important;
+    color: #005FA3 !important;
+}
+
+.about .about__right .about__right-item:hover {
+    background-color: #005FA3;
+    color: #fff !important;
+}
+
+.about .about__right .about__right-item:hover a {
+    color: #fff !important;
+}
+
+.clients {
+    padding: 100px 0;
+    background-color: #EBEBEB;
+}
+
+.clients .carousel-item-next, .clients .carousel-item-prev, .clients .carousel-item.active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rewievs {
+    padding: 140px 0 180px;
+}
+
+.rewievs .rewievs__carousel {
+    background-color: #EBEBEB;
+    color: #000;
+}
+
+.rewievs .rewievs__carousel .carousel-inner {
+    color: #000;
+    padding: 45px 95px;
+}
+
+.rewievs .rewievs__carousel .carousel-inner p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 58px;
+}
+
+.rewievs .rewievs__carousel .carousel-indicators li {
+    background-color: #005FA3;
+}
+
+.rewievs .rewievs__carousel .controls {
+    bottom: -120px;
+    background-color: #005FA3;
+}
+
+.rewievs .rewievs__user-icon {
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.rewievs .rewievs__user {
+    display: flex;
+    align-items: center;
+}
+
+.rewievs .rewievs__user .user__name {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.rewievs .rewievs__user .user__work {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contact {
+    padding: 122px 0 140px;
+    background-image: url("../img/contact-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.contact h2, .contact .h2 {
+    color: #fff;
+}
+
+.contact p {
+    max-width: 445px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact .form .form__group-top .form__group {
+    position: relative;
+}
+
+.contact .form .form__group-top .form__group span {
+    position: absolute;
+    top: -100%;
+}
+
+.contact .form .form__group-top .form__group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.contact .form .form__group {
+    position: relative;
+}
+
+.contact .form .form__group span {
+    position: absolute;
+    top: -25px;
+}
+
+.contact .form .form__group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.contact .form .btn {
+    padding: 18px 28px;
+    border-radius: 0;
+    display: block;
+    margin-left: auto;
+    background-color: #005FA3;
+}
+
+.footer {
+    padding: 50px 40px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
 }
